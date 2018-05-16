@@ -1,0 +1,7 @@
+.idea
+node_modules
+src/server/static/app
+src/server/utils/ssr
+build/server
+.vscode
+jsconfig.json

@@ -1,0 +1,13 @@
+{
+  "presets": ["react", "stage-0", "es2015"],
+  "plugins": [
+    "transform-es2015-modules-commonjs",
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    ["module-resolver", {
+      "root": ["./"]
+    }]
+  ],
+  "sourceMaps": true,
+  "retainLines": true
+}

@@ -1,0 +1,1 @@
+export const isWebEnv = () => typeof window === 'object';
