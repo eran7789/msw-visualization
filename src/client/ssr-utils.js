@@ -11,7 +11,7 @@ import { getStore } from 'store';
 import routes from 'routes';
 
 export const getRenderProps = location => new Promise(resolve => {
-  const matchedRoutes = matchRoutes(routes, location.path);
+  const matchedRoutes = matchRoutes(routes, location.pathname);
   const renderProps = {
     matchedRoutes,
     location
