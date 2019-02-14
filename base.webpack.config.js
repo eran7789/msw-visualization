@@ -36,6 +36,10 @@ const config = {
         exclude: /node_modules/
       },
       {
+        test: /\.(css|scss)$/,
+        use: 'ignore-loader'
+      },
+      {
         test: require.resolve('react'),
         use: 'expose-loader?React'
       },

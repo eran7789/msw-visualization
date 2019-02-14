@@ -17,15 +17,6 @@ const config = {
     libraryTarget: 'commonjs2'
   },
 
-  module: {
-    rules: [
-      {
-        test: /\.(css|scss)$/,
-        use: 'ignore-loader'
-      }
-    ]
-  },
-
   plugins: [
     new CleanWebpackPlugin([buildPath]),
     new webpack.DefinePlugin({ 'global.GENTLY': false })

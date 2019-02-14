@@ -31,7 +31,7 @@ const apiMiddleware: Middleware = ({ dispatch }) => next => action => {
   const request = apiUtils.request({ method, url, data, headers });
 
   request
-    .then(({ body }) => {
+    .then(({ body, ...rest }) => {
       dispatch(endNetwork(label));
 
       if (onSuccess) onSuccess(body, dispatch);
